@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Geeky Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+    <header>
+      <h1 id="title"><img src="assets/images/Geeky Survey Transparent.png" alt="Geeky Survey"></h1>
+      <p id ="description"> FILL OUT THE FORM BELOW TO START KICKING IT<br>WITH THE COOL KIDS!</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">NAME?</label>
+        <input id="name" type="text" name="name" placeholder="ENTER YOUR NAME" class="form-inputs" required></input>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">EMAIL?</label>
+        <input id="email" type="email" name="email" placeholder="ENTER YOUR EMAIL" class="form-inputs" required></input>
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">AGE? (OPTIONAL)</label>
+        <input id="number" type="number" name="number" placeholder="ENTER YOUR AGE" class="form-inputs" required></input>
+      </div>
+      
+      <div class="form-group">
+        <p>WHICH IS YOUR FAVORITE CONSOLE CREATOR?</p>
+        <select id="dropdown" name="dropdown" class="form-inputs" required>
+          <option disabled selected value>SELECT CONSOLE CREATOR</option>
+          <option value="microsoft">MICROSOFT</option>
+          <option value="nintendo">NINTENDO</option>
+          <option value="sega">SEGA</option>
+          <option value="sony">SONY</option>
+        </select>  
+      </div> 
+
+      <div class="form-group">
+        <p>WOULD YOU BE DOWN TO PLAY SUPER SMASH?</p>
+        <label>
+          <input id="smash-feedback" 
+            type="radio" 
+            name="smash_feedback" 
+            value="absolutely"
+            class="input-radio"/>
+        ABSOLUTELY!</label>
+        <br>
+        <label>
+          <input id="smash-feedback" 
+            type="radio" 
+            name="smash_feedback" 
+            value="maybe"
+            class="input-radio"/>
+        MAYBE</label>
+        <br>
+        <label>
+          <input id="smash-feedback" 
+            type="radio" 
+            name="smash_feedback" 
+            value="nah"
+            class="input-radio"/>
+        NAH</label>
+        <br>
+      </div>
+
+      <div class="form-group">
+        <p>WHICH CHARACTERS DO YOU LIKE? (CHECK ALL THAT YOU FANCY)</p>
+        <label for="mario">
+          <input id="mario" value="mario" type="checkbox" name="characters" class="input-checkbox">MARIO
+        </label>
+        <br>
+        <label for="sonic">
+          <input id="sonic" value="sonic" type="checkbox" name="characters" class="input-checkbox">SONIC
+        </label>
+        <br>
+        <label for="link">
+          <input id="link" value="link" type="checkbox" name="characters" class="input-checkbox">LINK
+        </label>
+        <br>
+        <label for="donkey-kong">
+          <input id="donkey-kong" value="donkey-kong" type="checkbox" name="characters" class="input-checkbox">DONKEY KONG
+        </label>
+        <br>
+        <label for="pikachu">
+          <input id="pikachu" value="pikachu" type="checkbox" name="characters" class="input-checkbox">PIKACHU
+        </label>
+        <br>
+        <label for="sub-zero">
+          <input id="sub-zero" value="sub-zero" type="checkbox" name="characters" class="input-checkbox">SUB-ZERO
+        </label>
+        <br>
+        <label for="mega-man">
+          <input id="mega-man" value="mega-man" type="checkbox" name="characters" class="input-checkbox">MEGA MAN
+        </label>
+        <br>
+        <label for="samus-aran">
+          <input id="samus-aran" value="samus-aran" type="checkbox" name="characters" class="input-checkbox">SAMUS ARAN
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>ANY LAST WORDS?</p>
+        <textarea
+          class="textarea"
+          placeholder="ENTER YOUR THOUGHTS..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          PRESS SUBMIT!
+        </button>
+      </div>
+
+    </form> 
+   </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
