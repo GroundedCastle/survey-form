@@ -80,7 +80,17 @@ input::placeholder {
 	padding: 0 4rem 3rem;
 }
 
-#title img {
+/* this h1 title is hidden because I don't want to take a bunch of time messing with CSS gradients. */
+#title {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+#title-actual {
 	max-width: 350px;
 	margin-left: 4rem;
 }
